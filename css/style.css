@@ -1,9 +1,7 @@
-body{
-    background-image: url("Fondo1.jpg");
-}
+style.css
 
 .ventana{
-    background-image: url("Fondo2.jpg");
+    background-image: url("./img/Fondo2.jpg");
     width: 30%;
     color: rgb(6, 2, 41);
     font-family: Comic Sans MS;
