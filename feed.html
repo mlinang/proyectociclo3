@@ -6,12 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/stylefeed.css">
     <script src="https://kit.fontawesome.com/6880bc3485.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>AcuarioFilia</title>
 </head>
     <body>
+        <nav class="navbar navbar-dark bg-dark justify-content-between" style="background-color:#e3f2fd;">
+            <a class="navbar-brand" href="#">
+                AcuarioFilia
+              </a>
+            
+            <form class="form-inline">
+                <table>
+                    <td>
+                    <div><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </td>
+                    <td><div><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button></div></div></td>
+                </table>
+            </form>
+        </nav>
         <div class="contenedor">
+            
             <div class=logo>
-                <img src="./imagenes/logo.jpg" alt="logo.jpg" width="50%">
+                <img src="./img/logo.jpg" alt="logo.jpg" width="50%">
             </div>
             <div class="estado">
                 <textarea name="comentarios" >¿Quieres contarnos algo?</textarea>
@@ -33,12 +49,12 @@
             <nav class="menu">
                 <ul>
                     <!--  <button type="button" class="fas fa-home opciones">Inicio</button> -->
-                     <li class="fas fa-home " > Inicio</li> 
-                     <li class="fas fa-binoculars"> Explora</li> 
-                     <li class="fas fa-users"> Amigos</li> 
-                     <li class="fas fa-bullhorn"> Notificaciones</li> 
-                     <li class="far fa-envelope"> Mensajes</li> 
-                     <li class="fas fa-cogs"> Administra</li> 
+                    <li class="fas fa-home " > <a href="perfil.html">Inicio</a></li>
+                    <li class="fas fa-binoculars"> <a href="search.html">Explora</a></li> 
+                    <li class="fas fa-users"> Amigos</li> 
+                    <li class="fas fa-bullhorn"> Notificaciones</li> 
+                    <li class="far fa-envelope"> Mensajes</li> 
+                    <li class="fas fa-cogs"> <a href="dashboard.html"> Administra </a></li> 
                 </ul>
             </nav>
             <main class="mis-publicaciones">
@@ -46,7 +62,10 @@
                 <div class = "contenedor-publicaciones">
                     <div class="publicacion">
                         <div class="imagen-publicada">
-                            <img src="./img/pez1.jpg" alt="" height="200">
+                            <a href="postdetail.html">
+                                <img src="./img/elacauriomarinopda.jpg" alt="" height="200">
+                            </a>
+
                         </div>
                     </div>
                     <div class="publicacion">
