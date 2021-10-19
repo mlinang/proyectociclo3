@@ -4,38 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/estilo-dashboard 2.css" rel="stylesheet" type="text/css" >
+    <link href="./css/estilo-dashboard.css" rel="stylesheet" type="text/css" >
+    <script src="https://kit.fontawesome.com/6880bc3485.js" crossorigin="anonymous"></script>
+    <link href="./css/sb-admin-2.min.css" rel="stylesheet">
     
     <title>Aquariofilia-Dashboard</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-dark justify-content-between" style="background-color:#e3f2fd;">
+        <a class="navbar-brand" href="#">
+            AcuarioFilia
+        </a>
+        <form class="form-inline">
+            <table>
+                <td>
+                <div><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </td>
+                <td><div><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button></div></div></td>
+            </table>
+        </form>
+    </nav>
     <table>
         <tr>
             <td>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-14 col-sm-35 col-xs-20">
                     <div class="panel panel-dark panel-colorful">
                         <div class="panel-body text-center">
                             <p class="h2 text-thin">Audiencia</p>
-                            <i class="fa fa-users fa-5x"></i>
+                            <i class="fa fa-users fa-4x"></i>
                             <hr>
-                            <p class="h2 text-thin">254,487</p>
+                            <p class="h2 text-thin">254,1000</p>
                             <small><span class="text-semibold">7%:  </span> 640 interacciones</small>
                         </div>
                     </div>
                 </div>
             </td>
             <td>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-9 col-sm-20 col-xs-25">
                     <div class="panel panel-danger panel-colorful">
                         <div class="panel-body text-center">
                             <p class="h2 text-thin">Interacciones</p>
-                            <i class="fa fa-comment fa-5x"></i>
+                            <i class="fa fa-comment fa-3x"></i>
                             <hr>
                             <p class="h2 text-thin">552</p>
-                            <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> 201</span>   Vistas totales</small>
-                            <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> 78</span>   Compartidas</small>
-                            <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> 293</span>   Comentarios</small>
+                            <small><span class="text-semibold"><i class="fa fa-eye fa-fw"></i> 201</span>   Vistas totales</small>
+                            <small><span class="text-semibold"><i class="fa fa-share fa-fw"></i> 78</span>   Compartidas</small>
+                            <small><span class="text-semibold"><i class="fa fa-comment fa-fw"></i> 293</span>   Comentarios</small>
                         </div>
                     </div>
                 </div>
@@ -43,13 +58,13 @@
         </tr>
         <tr>
             <td>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-16 col-sm-30 col-xs-25">
                     <div class="panel panel-primary panel-colorful">
                         <div class="panel-body text-center">
                             <p class="h2 text-thin">Contenido</p>
-                            <i class="fa fa-shopping-cart fa-5x"></i>
+                            <i class="fa fa-book fa-3x"></i>
                             <hr>
-                            <p class="text-uppercase mar-btm text-sm">60 publicaciones</p>
+                            <p class="text-uppercase mar-btm text-sm"><i class="fa fa-list fa-fw"></i>  60 publicaciones</p>
                             <table class="tabla" border="2">
                                 <tr class="header">
                                     <td>Nombre de publicación</td><td>Interacciones</td><td>Visto</td><td>Compartido</td>
@@ -67,7 +82,7 @@
                                     <td>4. Nadando con anguilas eléctricas</td><td>49</td><td>55</td><td>5</td>
                                 </tr>
                                 <tr>
-                                    <td>5. Barracudas relajándose</td><td>21</td><td>25</td><td>9</td>
+                                    <td>5. Barracudas relajándose en el arrecife</td><td>21</td><td>25</td><td>9</td>
                                 </tr>
                             </table>
                         </div>
@@ -78,12 +93,12 @@
                 <div class="panel panel-info panel-colorful">
                     <div class="panel-body text-center">
                         <p class="h2 text-thin">Participación</p>
-                        <i class="fa fa-dollar fa-5x"></i>
+                        <i class="fa fa-button fa-5x"></i>
                         <hr>
                         <p class="h2 text-thin">7,428</p>
-                        <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> 125</span>  Seguidores</small>
-                        <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> 985</span>  Vistas al perfil</small>
-                        <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> 9</span>  Grupos</small>
+                        <small><span class="text-semibold"><i class="fa fa-group fa-fw"></i> 125</span>  Seguidores</small>
+                        <small><span class="text-semibold"><i class="fa fa-eye fa-fw"></i> 985</span>  Vistas al perfil</small>
+                        <small><span class="text-semibold"><i class="fa fa-group fa-fw"></i> 9</span>  Grupos</small>
                     </div>
                 </div>
             </td>
