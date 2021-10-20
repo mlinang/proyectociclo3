@@ -1,134 +1,84 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Acuarifilia - Registro</title>
-        <link rel="stylesheet" href="./css/style.css" type="text/css">
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <body><center>
-        <table width="100%">
-            <tr>
-                <th style="background-color: blue; width:40%; text-align: left;" >
-                   <font face="Calibri" size=+2 color="white">
-                       Acuariofilia    -     Registro     
-                   </font>
-                </th>   
-            </tr>
-        </table>
-            <form action="" method="post" name="formLogin">
-                <label for="registrousuario">
-                    <font face="Aial" size=+3 color="Blue">
-                           Registro de Usuario
-                    </font>
-                </label>
-             <table aling="center" width="60%">
-                 <tr>
-                     <th align="rigth">
-                        <label for="nombre">
-                            <font face="Arial" size=+2 color="Blue">
-                                    Nombre
-                            </font>
-                        </label>
-                     </th>
-                     <th align="left">
-                        <input type="text" name="nombre" id="nombre" style="width: 350px; height: 25px;border-color: darkblue;">
-                     </th>
-                 </tr>
-                 <tr>
-                    <th align="rigth">
-                       <label for="fecha">
-                           <font face="Arial" size=+2 color="Blue">
-                                   Fecha de nacimiento
-                           </font>
-                       </label>
-                    </th>
-                    <th align="left">
-                       <input type="date" name="fecha" id="fecha" style="width: 150px; height: 25px;border-color: darkblue;">
-                       <label for="fecha">
-                        <font face="Arial" size=+2 color="Blue">
-                                Edad
-                        </font>
-                    </label> 
-                       <select name="edad">
-                            <option value="18-30">18-30 Años</option>
-                            <option value="31-40">31-40 Años</option>
-                            <option value="41-50">41-50 Años</option>
-                            <option value="51-60">18-30 Años</option>
-                            <option value="61-70">31-40 Años</option>
-                            <option value="71-80">41-50 Años</option>
-                            <option value="81">Más de 81 Años</option>
-                        </select>
-                    
-                    
-                    </th>
-                </tr>
-                 <tr><br>
-                    <th>
-                       <label for="usuario">
-                           <font face="Arial" size=+2 color="Blue">
-                                   Usuario
-                           </font>
-                       </label>
-                    </th>
-                    <th align="left">
-                       <input type="text" name="usuario" id="usuario" style="width: 150px; height: 25px;border-color: darkblue;">
-                       <font face="Arial" size=+1 color="Blue">
-                            @acuariofilia.com
-                        </font>
-                    </th>
-                </tr>
-                <tr><br>
-                    <th>
-                       <label for="contraseña1">
-                           <font face="Arial" size=+2 color="Blue">
-                                   Contraseña
-                           </font>
-                       </label>
-                    </th>
-                    <th>
-                       <input type="password" name="contraseña1" id="contraseña1" style="width: 250px; height: 25px;border-color: darkblue;">
-                    </th>
-                </tr>
-                <tr><br>
-                    <th>
-                       <label for="contraseña2">
-                           <font face="Arial" size=+2 color="Blue">
-                                   Confirmar Contraseña
-                           </font>
-                       </label>
-                    </th>
-                    <th>
-                       <input type="password" name="contraseña2" id="contraseña2" style="width: 250px; height: 25px;border-color: darkblue;">
-                    </th>
-                </tr>
-                </table><br>
-                <input type="checkbox" name="politica" > 
-                <font face="Arial" size=+1 color="Blue">
-                    <b>Acepta cumplir la política de privacidad de datos vigente.</b>
-                </font>
+    <title>Acuariofilia - Registro</title>
+    <link href="./css/sb-admin-2.min.css" rel="stylesheet">
+</head>
 
-            <table aling="center" width="60%">
-                <tr> 
-                    <th>
-                        <a href="login.html">
-                            <input id="registrar" type="button" value="Registrar" 
-                            style="width: 200px; height: 35px;border-color: darkblue;font-family: cursive; font-size: 25px;">
-                        </a>
-                    </th>
-                    <th style="width: 40%">  <br><br><br>
-                        <center><img src="./img/logo.jpg" alt="Acuariofilia" width="200" height="150"></center>
-                    </th>
-            </table>  
-        </form>
-    </center>
-    </body>
+<body class="bg-gradient-primary">
+    <div class="container">
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12 col-md-9">
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6">
+                                
+                                <div class="p-5">
+                                    
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Acuariofilia - Registro</h1>
+                                    </div>
+                                    <form class="user">
+                                        <hr>
+                                        <div class="form-group">
+                                            <h1 class="h6 text-gray-900 mb-4">Nombre</h1>
+                                            <input type="text" class="form-control form-control-user"
+                                                id="nombre" aria-describedby="emailHelp"
+                                                placeholder="Ingresar su nombre...">
+                                            <h1 class="h6 text-gray-900 mb-4">Apellido</h1>
+                                            <input type="text" class="form-control form-control-user"
+                                                    id="apellido" aria-describedby="emailHelp"
+                                                    placeholder="Ingrese primer apellido...">
+                                            <h1 class="h6 text-gray-900 mb-4">Fecha de nacimiento</h1>
+                                            <input type="date" class="form-control form-control-user"
+                                            id="fechaNacimiento" aria-describedby="emailHelp"
+                                            placeholder="IFecha..."><br><center>
+                                            <input type="checkbox" name="sexo" value="Femenino">Femenino
+                                            <input type="checkbox" name="sexo" value="Masculino">Masculino
+                                            <input type="checkbox" name="sexo" value="Otro">Otro</center>
+                                            <h1 class="h6 text-gray-900 mb-4">E-mail</h1>
+                                            <input type="email" class="form-control form-control-user"
+                                            id="email" aria-describedby="emailHelp"
+                                            placeholder="Digite E-mail">
+                                            <h1 class="h6 text-gray-900 mb-4">Contraseña</h1>
+                                            <input type="password" class="form-control form-control-user"
+                                            id="contraseña" aria-describedby="emailHelp"
+                                            placeholder="Digite contraseña">
+                                            <h1 class="h6 text-gray-900 mb-4">Confirmar Contraseña</h1>
+                                            <input type="password" class="form-control form-control-user"
+                                            id="contraseña2" aria-describedby="emailHelp"
+                                            placeholder="Digite contraseña de nuevo">
 
+                                        </div>
+                                        <hr>
+                                        <a href="login2.html" class="btn btn-primary btn-user btn-block">
+                                            Enviar
+                                        </a>
+                                    
+                                    </form>
+                                 
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
 
 
