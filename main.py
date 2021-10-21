@@ -87,6 +87,7 @@ def send():
     return render_template("send.html", form=form)
 
 @app.route('/registro', methods=['GET', 'POST'])
+@app.route('/registro', methods=['GET', 'POST'])
 def registro():
     #try:
         if g.user:
@@ -161,8 +162,8 @@ def registro():
     #    flash("¡Ups! Ha ocurrido un error, intentelo de nuevo.")
     #    return render_template("registro.html")
 
-
 @app.route('/login', methods=['GET', 'POST'])
+@app.route('/login.html', methods=['GET', 'POST'])
 def login():
     form = Formulario_Usuario( request.form )
     if request.method == 'POST': # and form.validate():  
@@ -229,13 +230,25 @@ def cargar_usuario_registrado():
             ).fetchone()
     print('g.user:', g.user)
 
+@app.route('/recordarpassword2', methods=['GET', 'POST'])
+@app.route('/recordarpassword2.html', methods=['GET', 'POST'])
+def recordarpassword2():
+    return render_template("recordarpassword2.html", titulo='')
+
 @app.route('/feed', methods=['GET', 'POST'])
+@app.route('/feed.html', methods=['GET', 'POST'])
 def feed():
     return render_template("feed.html", titulo='')
 
 @app.route('/dashboard', methods=['GET', 'POST'])
+@app.route('/dashboard.html', methods=['GET', 'POST'])
 def dashboard():
     return render_template("dashboard.html", titulo='')
+
+@app.route('/postdetail.html', methods=['GET', 'POST'])
+@app.route('/postdetail', methods=['GET', 'POST'])
+def postdetail():
+    return render_template("postdetail.html", titulo='')
 
 @app.route('/contacto', methods=['GET','POST'])
 def contacto():    
