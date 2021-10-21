@@ -231,7 +231,11 @@ def cargar_usuario_registrado():
 
 @app.route('/feed', methods=['GET', 'POST'])
 def feed():
-    return render_template("feed.html", titulo='Gracias')
+    return render_template("feed.html", titulo='')
+
+@app.route('/dashboard', methods=['GET', 'POST'])
+def dashboard():
+    return render_template("dashboard.html", titulo='')
 
 @app.route('/contacto', methods=['GET','POST'])
 def contacto():    
