@@ -87,7 +87,7 @@ def send():
     return render_template("send.html", form=form)
 
 @app.route('/registro', methods=['GET', 'POST'])
-@app.route('/registro', methods=['GET', 'POST'])
+@app.route('/registro.html', methods=['GET', 'POST'])
 def registro():
     #try:
         if g.user:
