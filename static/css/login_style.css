@@ -242,7 +242,6 @@ select.form-control:focus::-ms-value {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-
 .btn-primary {
   color: #fff;
   background-color: #4e73df;
