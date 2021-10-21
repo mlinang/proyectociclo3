@@ -21,27 +21,39 @@ nav ul{
 }
 .contenedor{
     margin: 20px;
-    width: 90vw;
+    width: 98vw;
     display: grid;
     
     gap: 15px;
     grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:"logo       estado              novedades"
-                        "logo       estado              novedades"
-                        "menu       mis-publicaciones   novedades"
-                        "menu       mis-publicaciones   novedades"
-                        "footer     mis-publicaciones   novedades";
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:"logo           estado              novedades"
+                        "logo           estado              novedades"
+                        "menu           mis-publicaciones   novedades"
+                        "menu           mis-publicaciones   novedades"
+                        "developerteam  mis-publicaciones   novedades"
+                        "footer         footer              footer";
 }
 .contenedor .logo{
     grid-area: logo;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
+.logo img{
+    width: 150px;
+    height: 127px;
+    will-change: none;
+   
+}
 .contenedor .menu{
-    max-height: 400px;
+    height:350px;
+    min-height: 350px;
     grid-area: menu;
     color: black;
     font-size: 25px;
+    will-change: none;
 }
 .contenedor .estado{
     background-color: rgb(233, 247, 247);
@@ -73,12 +85,18 @@ nav ul{
     background-color: rgb(233, 247, 247);
     grid-area: mis-publicaciones;
     margin:2px;
+    height: 1500px;
+    max-height: 500px;
+    
 }
 .contenedor h1{
     font-size: 30px;
 }
 .contenedor-publicaciones{
     display: grid;
+    height: 500px;
+    max-height: 500px;
+    overflow: auto;
     background: #fff;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, auto);
@@ -95,15 +113,16 @@ nav ul{
     margin: 2px;
 	display: grid;
     object-fit: cover;
+    
 }
 
 .contenedor .novedades{
     background-color: rgb(233, 247, 247);
     grid-area: novedades;
     margin: 2PX;
-}
-.contenedor .footer{
-    max-height:150px ;
+    overflow: auto;
+    height: 730px;
+    max-height: 900px;
 }
 .novedad .titulo {
 	color: #C00000;
@@ -111,12 +130,6 @@ nav ul{
 	margin: 0;
 	
 }
-
-/* .novedad .texto {
-	line-height: 28px;
-	color: #1E1E1E;
-} */
-
 .novedad button {
 	margin-right: 20px;
 	text-align: left;
@@ -135,7 +148,15 @@ nav ul{
     border-radius: 4px;
 }
 
-.contenedor .footer{
+.contenedor .developerteam{
+    max-height: 180px;
     color: grey;
+    grid-area: developerteam;
+    align-self: end;
+
+/* }
+.footer{
     grid-area: footer;
+    background-color: black;
 }
+ */

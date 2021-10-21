@@ -229,9 +229,9 @@ def cargar_usuario_registrado():
             ).fetchone()
     print('g.user:', g.user)
 
-@app.route('/gracias', methods=['GET', 'POST'])
-def gracias():
-    return render_template("gracias.html", titulo='Gracias')
+@app.route('/feed', methods=['GET', 'POST'])
+def feed():
+    return render_template("feed.html", titulo='Gracias')
 
 @app.route('/contacto', methods=['GET','POST'])
 def contacto():    
