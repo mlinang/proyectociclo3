@@ -8,12 +8,12 @@ img{
     width: 280px;
     object-fit: cover;
 }
-
+    
 body{
     background: white;
     color: black;
 }
-nav ul{
+.menu ul{
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -58,10 +58,13 @@ nav ul{
 }
 .contenedor .estado{
     background-color: rgb(233, 247, 247);
-    padding: 0 20px;
+    padding: 10px;
     grid-area: estado;
+
+
 }
 .estado textarea{
+    margin-left: 40px;
     font-size: 25px;
     height: 100px;
     width: 800px;
@@ -92,7 +95,7 @@ nav ul{
 }
 .contenedor-publicaciones{
     display: grid;
-    height: 620px;
+    height: 610px;
     overflow: auto;
     background: #fff;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,7 +119,7 @@ nav ul{
     grid-area: novedades;
     margin: 2PX;
     overflow: auto;
-    height: 830px;
+    height: 820px;
 }
 .novedad .titulo {
 	color: #C00000;
