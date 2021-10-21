@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 img{
     height: 200px;
@@ -95,7 +95,7 @@ body{
 }
 .contenedor-publicaciones{
     display: grid;
-    height: 610px;
+    height: 590px;
     overflow: auto;
     background: #fff;
     grid-template-columns: 1fr 1fr 1fr;
